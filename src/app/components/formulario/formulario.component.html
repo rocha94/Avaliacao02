@@ -1,0 +1,28 @@
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">CEP</label>
+      <input type="email" #input class="form-control" value="" required>
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Endereço</label>
+      <input class="form-control" placeholder="{{endereco}}"value="">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Bairro</label>
+      <input  class="form-control" placeholder="{{bairro}}"value="">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Estado</label>
+      <input class="form-control" placeholder="{{estado}}" value="">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Cidade</label>
+      <input class="form-control" placeholder="{{cidade}}"value="">
+    </div>
+    
+    <div class="d-grid pag-2">
+    <button type="submit" class="btn btn-light" (click)="search(input.value);$event.preventDefault()">Continuar</button>
+    </div>
+
+  </form>
